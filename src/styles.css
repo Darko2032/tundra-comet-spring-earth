@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Newsreader", "Iowan Old Style", Palatino, "Palatino Linotype",
+    serif;
+
+  --color-ink: #111318;
+  --color-ink-2: #181b22;
+  --color-paper: #f3f0e8;
+  --color-paper-2: #e8e3d6;
+  --color-rule: #d0c9b8;
+  --color-fg: #1c1f26;
+  --color-muted: #4e524c;
+  --color-subtle: #7a7e74;
+  --color-steel: #6d7c8b;
+  --color-accent: #3d4a57;
+  --color-danger: #8f3d32;
+
+  --color-ghost: color-mix(in srgb, #f3f0e8 8%, transparent);
+  --color-hairline: color-mix(in srgb, #f3f0e8 12%, transparent);
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  --shadow-paper:
+    0 0 0 1px rgba(28, 31, 38, 0.06), 0 1px 2px rgba(17, 19, 24, 0.04),
+    0 28px 64px -28px rgba(17, 19, 24, 0.45);
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.toc-scroll {
+  max-height: calc(100dvh - 3.5rem);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-padding-top: 5rem;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-ink);
+    color: var(--color-paper);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  .prose-brief p {
+    text-wrap: pretty;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  html,
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  .print-paper {
+    box-shadow: none !important;
+    max-width: none !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+}

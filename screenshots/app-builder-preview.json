@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Security Fundamentals Brief",
+      "hasCanvas": false,
+      "bodyTextLen": 38378,
+      "bodyTextHash": "4c477f740769dc26c0a42cd9398a57c4a2a318ec9330a09cacc02eade3a8388f",
+      "bodyTextPrefix": "Security Fundamentals Brief 02 · Objectives 1.1 and 1.2 Print CO",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Security Fundamentals Brief",
+      "hasCanvas": false,
+      "bodyTextLen": 37988,
+      "bodyTextHash": "429fd4c84363067c40bcadecf54d591a528b5495eb825f8d2df31a724d5ca83c",
+      "bodyTextPrefix": "Security Fundamentals BRIEF 02 · SECURITY FUNDAMENTALS Fondament",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
